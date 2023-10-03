@@ -1,7 +1,7 @@
 function sumAllPrices(books) {
     const avaliableBooksHtml = document.querySelector('#valor_total_livros_disponiveis')
 const bookPrices = books.map(book => book.preco) 
-const totalBookPrice = bookPrices.reduce((total, price) => total + price, 0);
+const totalBookPrice = bookPrices.reduce((total, price) => total + price, 0).toFixed(1)
 
 console.log(totalBookPrice)
 
